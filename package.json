@@ -1,12 +1,13 @@
 {
-  "name": "React YouTube search",
+  "name": "React_YouTube_search",
   "version": "1.0.0",
   "description": "Simple YouTube video search using React, Redux, Router and YouTube search API",
   "repository": "git@github.com:sevenka/React-YouTube-search.git",
   "author": "Oksana Mazun <misssevenka@gmail.com>",
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

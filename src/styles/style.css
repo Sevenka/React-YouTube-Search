@@ -1,0 +1,17 @@
+.main-title {
+  margin-bottom: 2em;
+}
+.thumbnail-item {
+  margin: 2em 0;
+}
+.thumbnail-title {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    margin-bottom: 1em;
+  }
+  .thumbnail-title {
+    font-size: 1.5em;
+  }
+}
