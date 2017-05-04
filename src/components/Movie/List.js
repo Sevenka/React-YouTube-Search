@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const List = ({movies}) => {
   const moviesList = movies.list
-  if (moviesList !== undefined) {
+  if (moviesList.length) {
     const movieItems = moviesList.map((movie) => {
       return(
         <div className="row thumbnail-item" key={movie.id.videoId}>
@@ -21,9 +21,17 @@ const List = ({movies}) => {
     return (
       <div className="list">{movieItems}</div>
     )
+  } else if (movies.noResults) {
+    return (
+      <div className="list">
+        <h3 className="no-items">No results</h3>
+      </div>
+    )
   } else {
     return (
-      <div className="list"></div>
+      <div className="list">
+        <h3 className="no-items">Input your request in the field above and click on "Submit" button</h3>
+      </div>
     )
   }
 }

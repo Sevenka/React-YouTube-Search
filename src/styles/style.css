@@ -7,6 +7,9 @@
 .thumbnail-title {
   margin-top: 0;
 }
+.no-items {
+	text-align: center;
+}
 @media screen and (max-width: 768px) {
   .main-title {
     margin-bottom: 1em;

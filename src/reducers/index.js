@@ -2,7 +2,8 @@ import { GET_MOVIES } from '../actions'
 
 const initialState = {
   movies: {
-    list: []
+    list: [],
+    noResults: false
   }
 }
 
@@ -12,7 +13,8 @@ export default function moviesState(state = initialState, action) {
       return { ...state,
         movies: {
           ...state.movies,
-          list: action.payload.data.items
+          list: action.payload.data.items,
+          noResults: !action.payload.data.items.length
         }
       }
     default:
