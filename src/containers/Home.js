@@ -11,7 +11,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <SearchBar onTermChange={this.props.actions.getMovies} />
-        <List movies={this.props.movies} />
+        <List movies={this.props.movies} onOpenMovie={this.props.actions.openMovie} />
       </div>
     )
   }

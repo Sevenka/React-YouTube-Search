@@ -2,7 +2,6 @@ import { GET_MOVIES } from '../actions'
 
 const initialState = {
   movies: {
-    currentId: '',
     list: []
   }
 }
