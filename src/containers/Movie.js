@@ -6,8 +6,8 @@ export default class Movie extends Component {
   render() {
     return (
       <div className="movie">
-      	<Player />
+        <Player />
       </div>
-    );
+    )
   }
 }
