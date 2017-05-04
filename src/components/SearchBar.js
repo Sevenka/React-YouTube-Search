@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class SearchBar extends Component {
   onSearch(term) {
-    this.props.onTermChange(term)
+    if (term) this.props.onTermChange(term)
   }
   render() {
     return (
