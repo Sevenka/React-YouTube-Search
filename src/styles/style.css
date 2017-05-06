@@ -10,6 +10,9 @@
 .no-items {
 	text-align: center;
 }
+.delete-movie {
+  float: right;
+}
 @media screen and (max-width: 768px) {
   .main-title {
     margin-bottom: 1em;

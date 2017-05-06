@@ -11,7 +11,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <SearchBar onTermChange={this.props.actions.getMovies} />
-        <List movies={this.props.movies} onOpenMovie={this.props.actions.openMovie} />
+        <List movies={this.props.movies} onDelete={this.props.actions.deleteMovie} />
       </div>
     )
   }

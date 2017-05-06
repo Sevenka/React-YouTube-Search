@@ -1,4 +1,8 @@
-import { GET_MOVIES_PENDING, GET_MOVIES_FULFILLED, GET_MOVIES_REJECTED } from '../actions'
+import { 
+  GET_MOVIES_PENDING,
+  GET_MOVIES_FULFILLED,
+  GET_MOVIES_REJECTED,
+  DELETE_MOVIE } from '../actions'
 
 const initialState = {
   movies: {
@@ -35,6 +39,13 @@ export default function moviesState(state = initialState, action) {
           ...state.movies,
           pending: false,
           error: true
+        }
+      }
+    case DELETE_MOVIE:
+      return {...state,
+        movies: {
+          ...state.movies,
+          list: state.movies.list.filter((movie) => movie.id.videoId !== action.id)
         }
       }
     default:
