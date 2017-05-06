@@ -1,5 +1,5 @@
 import { createStore, compose, applyMiddleware } from 'redux'
-import ReduxPromise from 'redux-promise'
+import promiseMiddleware from 'redux-promise-middleware'
 import rootReducer from '../reducers'
 
 export default function configureStore(initialState) {
@@ -7,7 +7,7 @@ export default function configureStore(initialState) {
     rootReducer,
     initialState,
     compose (
-      applyMiddleware(ReduxPromise),
+      applyMiddleware(promiseMiddleware()),
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   )

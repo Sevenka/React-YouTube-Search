@@ -27,6 +27,18 @@ const List = ({movies}) => {
         <h3 className="no-items">No results</h3>
       </div>
     )
+  } else if (movies.pending) {
+    return (
+      <div className="list">
+        <h3 className="no-items">Loading...</h3>
+      </div>
+    )
+  } else if (movies.error) {
+    return (
+      <div className="list">
+        <h3 className="no-items">Error occured while loading data</h3>
+      </div>
+    )
   } else {
     return (
       <div className="list">
