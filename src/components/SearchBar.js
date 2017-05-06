@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
   onSearch(term) {
     if (term) this.props.onTermChange(term)
+    this.refs.search.value = ''
   }
   render() {
     return (
