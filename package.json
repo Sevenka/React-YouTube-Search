@@ -4,6 +4,7 @@
   "description": "Simple YouTube video search using React, Redux, Router and YouTube search API",
   "repository": "git@github.com:sevenka/React-YouTube-search.git",
   "author": "Oksana Mazun <misssevenka@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.16.1",
     "prop-types": "^15.5.8",
